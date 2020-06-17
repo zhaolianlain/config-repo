@@ -2,8 +2,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-  instance:
-    instance-id: 192.168.124.1:8766
+#   instance:
+#     instance-id: 192.168.124.1:8766
 spring:
   application:
     name: order
@@ -17,8 +17,8 @@ spring:
     port: 5672
     username: guest
     password: guest
-server:
-  port: 8766
+# server:
+#   port: 8766
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
