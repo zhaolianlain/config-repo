@@ -6,3 +6,13 @@ zuul:
       sensitiveHeaders:
   ignored-patterns:
     - /**/product/listForOrder
+    
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' 
