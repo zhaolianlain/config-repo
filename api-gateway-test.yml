@@ -28,3 +28,6 @@ zuul:
 #     aaaaa: #这里随便写 MyProduct/product/list下面的是定位到product/product/list 也可以写成 product: /myProduct/**
 #       path: /myProduct/**
 #       serviceId: product
+#排除某些接口（排除某些路由）
+#   ignored-patterns:
+#     - /**/product/listForOrder
