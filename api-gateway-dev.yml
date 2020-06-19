@@ -1,11 +1,13 @@
 zuul:
-  sensitive-headers: #忽略全部敏感头（全部服务可以传递cookie）
+#忽略全部敏感头（全部服务可以传递cookie）
+  sensitive-headers: 
   routes:
     myProduct:
       path: /myProduct/**
       serviceId: product
       sensitiveHeaders:
-  ignored-patterns:   #敏感头
+  #敏感头
+  ignored-patterns:   
     - /**/product/listForOrder
     
 ribbon:
