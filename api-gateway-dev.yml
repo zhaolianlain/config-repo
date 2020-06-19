@@ -4,7 +4,7 @@ zuul:
       path: /myProduct/**
       serviceId: product
       sensitiveHeaders:
-  ignored-patterns:
+  ignored-patterns:   #敏感头
     - /**/product/listForOrder
     
 ribbon:
